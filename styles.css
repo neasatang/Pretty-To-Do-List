@@ -1,0 +1,128 @@
+body{
+	background-color: thistle;
+}
+
+h2{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+}
+
+p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:15px;
+  margin-right: 0px;
+  position: relative;
+}
+/* Remove margins and padding from the list */
+ul {
+    margin-top: 10%;
+    padding: 0 0 0 5px;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 6px 5px 10px;
+    background: LightBlue ;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.2s;
+    border:1px solid black;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: pink;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: MediumAquaMarine ;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: PaleVioletRed ;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 3px;
+    left: 3px;
+    transform: rotate(45deg);
+    height: 3px;
+    width: 3px;
+    margin-top: inherit;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 6px 5px 10px;
+}
+
+/*
+.close:hover {
+    color: white;
+}*/
+
+/* Style the header */
+.header {
+    background-color: MediumTurquoise ;
+    color: white;
+    text-align: center;
+    margin:50px auto;
+    width:50%;
+    height:500px;
+    overflow: auto;
+    border:1px solid black;
+    border-radius: 5%;
+    /*box-shadow: 14px 13px 9px -2px rgba(0,0,0,0.75);*/
+}
+
+.items{
+	text-align: center;
+}
+
+/* Style the input i.e. type bar */
+input {
+    width: 75%;
+    padding: 10px;
+    float: left;
+    margin-left: 12%;
+    margin-top: 3%;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: MistyRose;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position:absolute;
+
+}
+
+.addBtn:hover {
+    background-color: PowderBlue ;
+}
